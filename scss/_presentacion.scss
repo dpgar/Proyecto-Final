@@ -1,0 +1,43 @@
+@import "variables.scss";
+@import "_mediaqueries.scss";
+
+/*contenido principal*/
+
+.contenidopst {
+    
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .align-self {
+            width: 100%;
+            margin: 5rem;
+            align-self: center;
+
+
+            h1 {
+                font-size: $textXxl;
+                font-family: $fontSecondary;
+            }
+
+            h2 {
+                font-size: $textLg;
+                font-family: $fontSecondary;
+            }
+
+            p {
+                font-size: $textSm;
+                font-family: $fontMain;
+            }
+        }
+
+        #carouselExampleFade{
+            box-shadow: map-get($map:$shadow,$key:'sh2');
+        }
+    
+    }
+
+
+
+}

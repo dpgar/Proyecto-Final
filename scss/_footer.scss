@@ -1,0 +1,30 @@
+/*pie de pagina*/
+
+
+footer {
+    line-height: 3;
+    background-color: $color-secondary;
+    color: $color-third;
+
+    div {
+        section {
+            .btn {
+                @include p-m(2rem,1rem);
+                margin-left: 3rem;
+                background-color: $color-forth;
+                color: $color-fifth;
+                text-decoration: none;
+                font-size: $textSm;
+                border-radius: 25px;
+                line-height: 0;
+            }
+        }
+    }
+
+    .barracopy {
+        background-color: $color-sixth;
+        width: 100%;
+        font-family: $fontMain;
+
+    }
+}

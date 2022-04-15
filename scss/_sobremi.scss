@@ -1,0 +1,230 @@
+@import "variables.scss";
+@import "_mediaqueries.scss";
+
+/* Sobre mi */
+
+.contenidoSbrmi {
+    overflow: hidden;
+
+    .sbrmi {
+        display: flex;
+        flex-direction: row;
+        padding: 80px 40px 60px 300px;
+
+        .imgSbrmi {
+
+
+            img {
+
+                border-radius: 20px;
+                box-shadow: map-get($map:$shadow, $key:'sh3');
+                width: 40rem;
+                height: 45rem;
+            }
+
+        }
+
+        .textSbrmi {
+
+            background-color: $color-seventh;
+            margin: 2rem;
+
+            h3 {
+                font-size: 3rem;
+                font-family: $fontSecondary;
+                width: 50%;
+                padding-bottom: 2rem;
+                animation: fadeIn;
+                animation-duration: 2s;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-family: $fontMain;
+                width: 50%;
+                animation: fadeIn;
+                animation-duration: 3s;
+
+                a {
+                    font-weight: 500;
+                    color: black;
+                }
+            }
+        }
+
+    }
+
+    .redesSbrmi {
+        h2 {
+            font-size: $textLg;
+            font-family: $fontSecondary;
+            padding-bottom: 20px;
+            margin-left: 30px;
+            
+
+        }
+
+        .iconosRedes {
+
+            img {
+                height: 5rem;
+                width: 5rem;
+                transition: transform 0.3s ease-in-out;
+                margin-bottom: 5rem;
+                margin-left: 4rem;
+
+                &:hover {
+                    transform: scale(1.1);
+
+                }
+
+            }
+        }
+
+    }
+
+    #bloqueSeparadorSbrmi {
+        line-height: 3;
+        background-color: $color-secondary;
+        color: $color-third;
+        font-family: $fontSecondary;
+        padding: 3rem;
+
+        h2 {
+            font-size: $textLg;
+        }
+    }
+
+    .cardFondo {
+
+        background-image: url(../img/fondoSbrmiV2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+
+        .cardPosition1 {
+            padding: 50px 40px 10px 150px;
+            animation: fadeInLeft;
+            animation-duration: 4s;
+
+
+
+            .cardSbrmi {
+
+                font-family: $fontMain;
+                box-shadow: map-get($map:$shadow, $key:'sh6');
+                border: 1px solid #d1cfcf8c;
+                border-radius: 19px 19px 19px 19px;
+                background-color: white;
+
+
+
+                .imgSbrmi {
+                    border-radius: 19px 0px 0px 19px;
+                    box-shadow: map-get($map:$shadow, $key:'sh1');
+
+                }
+
+                .card-body {
+
+                    .card-title {
+                        font-size: $textMg;
+                        font-family: $fontSecondary;
+                        padding: 10px;
+                    }
+
+                    .card-text {
+                        font-size: $textSmV3;
+                        padding: 4px;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+        .cardPosition2 {
+            padding: 20px 40px 10px 700px;
+            animation: fadeInRight;
+            animation-duration: 5s;
+
+
+
+            .cardSbrmi {
+
+                font-family: $fontMain;
+                box-shadow: map-get($map:$shadow, $key:'sh6');
+                border: 1px solid #d1cfcf8c;
+                border-radius: 19px 19px 19px 19px;
+                background-color: white;
+
+
+
+                .imgSbrmi {
+                    border-radius: 19px 0px 0px 19px;
+                    box-shadow: map-get($map:$shadow, $key:'sh1');
+
+                }
+
+                .card-body {
+
+                    .card-title {
+                        font-size: $textMg;
+                        font-family: $fontSecondary;
+                        padding: 10px;
+                    }
+
+                    .card-text {
+                        font-size: $textSmV3;
+                        padding: 4px;
+                    }
+
+                }
+
+            }
+        }
+
+        .cardPosition3 {
+            padding: 20px 40px 50px 150px;
+            animation: fadeInLeft;
+            animation-duration: 6s;
+
+
+
+            .cardSbrmi {
+
+                font-family: $fontMain;
+                box-shadow: map-get($map:$shadow, $key:'sh6');
+                border: 1px solid #d1cfcf8c;
+                border-radius: 19px 19px 19px 19px;
+                background-color: white;
+
+
+
+                .imgSbrmi {
+                    border-radius: 19px 0px 0px 19px;
+                    box-shadow: map-get($map:$shadow, $key:'sh1');
+
+                }
+
+                .card-body {
+
+                    .card-title {
+                        font-size: $textMg;
+                        font-family: $fontSecondary;
+                        padding: 10px;
+                    }
+
+                    .card-text {
+                        font-size: $textSmV3;
+                        padding: 4px;
+                    }
+
+                }
+
+            }
+        }
+    }
+}

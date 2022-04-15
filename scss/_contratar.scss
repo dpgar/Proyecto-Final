@@ -1,0 +1,173 @@
+@import "variables.scss";
+@import "_mediaqueries.scss";
+
+/*contratar*/
+.contenidoCntrar {
+    // padding-bottom: 3rem;
+    
+
+    #carouselSlideCntrar {
+        box-shadow: map-get($map:$shadow, $key:'sh5');
+
+        .carousel-item {
+
+            transition: 0.5 ease-in-out left;
+
+            img {
+                
+            }
+        }
+
+
+
+        .tituloContratar {
+            font-size: $text2xl;
+            font-family: $fontMain;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
+
+            &:hover {
+                font-size: $text3xl;
+                transition: all 0.3s ease-in-out;
+
+            }
+        }
+    }
+
+    .groupCards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        @include p-m(3rem, 3rem);
+
+
+        .animaCard1 {
+            animation: fadeInUp;
+            animation-duration: 0.8s;
+        }
+
+        .animaCard2 {
+            animation: fadeInUp;
+            animation-duration: 1.2s;
+        }
+
+        .animaCard3 {
+            animation: fadeInUp;
+            animation-duration: 1.5s;
+        }
+
+        .cardcntrar {
+            width: 33rem;
+            font-family: $fontMain;
+            box-shadow: map-get($map:$shadow, $key:'sh6');
+            border: 1px solid #d1cfcf;
+            border-radius: 19px 19px 11px 11px;
+            padding-bottom: 15px;
+
+
+            .card-img-top {
+                border-radius: 19px 19px 0px 0px;
+                box-shadow: map-get($map:$shadow, $key:'sh1');
+
+            }
+
+            .card-title {
+                font-size: $textMg;
+                font-family: $fontSecondary;
+                padding: 10px;
+            }
+
+            .card-text {
+                font-size: $textSmV3;
+                padding: 4px;
+            }
+
+            ol {
+                list-style-type: disc;
+                padding-bottom: 10px;
+
+                li {
+                    font-size: $textSmV3;
+                    padding-bottom: 5px;
+
+                }
+            }
+
+            #btncntrar {
+                background: #545454;
+                background-image: linear-gradient(to bottom, #545454, #292929);
+                border-radius: 25px;
+                text-shadow: 1px 2px 3px #363636;
+                box-shadow: 1px 1px 3px #8f8f8f;
+                font-family: $fontMain;
+                color: #ffffff;
+                font-size: $textSmV4;
+                background: #333333;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
+
+                &:hover {
+                    background: #1a1a1a;
+                    background-image: linear-gradient(to bottom, #1a1a1a #333333);
+                    text-decoration: none;
+                }
+
+                &:active {
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+    }
+
+    #bloqueSeparadorCntrar {
+        font-family: $fontSecondary;
+        background-color: $color-secondary;
+        color: $color-third;
+        padding: 3rem;
+
+        .textoBloque {
+            font-size: $textLg;
+        }
+    }
+
+    .accordionFondo {
+
+        background-image: url(../img/fondoSbrmiV2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+        
+
+
+        .accordion {
+            @include p-m(2rem, 5rem);
+            box-shadow: map-get($map:$shadow, $key:'sh7');
+            background-color: white;
+
+
+            .accordion-header {
+
+                .accordion-button {
+                    font-family: $fontSecondary;
+                    font-size: $textSm;
+                    padding: 3rem;
+                }
+
+            }
+
+            .accordion-body {
+                font-family: $fontMain;
+                font-size: $textSmV4;
+                line-height: 2.7rem;
+                padding: 3rem;
+            }
+        }
+
+    }
+}

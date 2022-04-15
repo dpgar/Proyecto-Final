@@ -1,0 +1,145 @@
+@import "variables.scss";
+@import "_mediaqueries.scss";
+
+/* Contacto */
+
+.contenidoContc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+    font-family: $fontThird;
+    background-image: url(../img/fondoSbrmiV2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+
+    .contcFondo {
+         
+
+        .textForm {
+            font-size: $textLg;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 4rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        form {
+            padding: 30px 0 0 0 0;
+
+            .form-row {
+                display: flex;
+                margin: 32px 0;
+                padding: 10px;
+
+                .input-data {
+                    width: 100%;
+                    height: 30px;
+                    margin: 0 20px;
+                    position: relative;
+
+                    input {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        font-size: 17px;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+
+                    }
+
+                    label {
+                        position: absolute;
+                        bottom: 40px;
+                        pointer-events: none;
+                        font-size: 16px;
+
+                    }
+
+                }
+
+                .textarea {
+                    height: 70px;
+                    width: 100%;
+                    margin: 0 20px;
+                    position: relative;
+
+                    textarea {
+
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        border: none;
+                        font-size: 17px;
+                        border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+                        resize: none;
+
+                    }
+
+                    .textLarge {
+                        position: absolute;
+                        bottom: 40px;
+                        pointer-events: none;
+                        font-size: 16px;
+
+                    }
+
+                }
+
+            }
+
+            .form-row-btn {
+                display: flex;
+                justify-content: center;
+                margin: 32px 0;
+                padding: 10px;
+                
+
+                .submit-btn {
+                    padding-bottom: 10px;
+
+
+                    .input-data-btn {
+                        width: 100%;
+                        height: 30px;
+                        position: relative;
+                        text-decoration: none;
+
+                        input {
+                            
+                            font-size: $textMg;
+                            font-family: $fontThird;
+                            background: #545454;
+                            background-image: linear-gradient(to bottom, #545454, #292929);
+                            border-radius: 30px;
+                            padding: 15px 40px 15px 40px; ;
+                            text-shadow: 1px 2px 3px #363636;
+                            box-shadow: 1px 1px 3px #8f8f8f;
+                            font-family: $fontMain;
+                            color: #ffffff;
+                            background: #333333;
+                            text-decoration: none;
+
+                            &:hover {
+                                background: #1a1a1a;
+                                background-image: linear-gradient(to bottom, #1a1a1a #333333);
+                                text-decoration: none;
+                            }
+
+                            &:active {
+                                position: relative;
+                                top: 1px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}

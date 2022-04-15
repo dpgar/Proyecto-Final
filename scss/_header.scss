@@ -1,0 +1,54 @@
+@import "_variables.scss";
+
+/* Cabecera */
+
+header {
+
+    nav {
+        background-color: $color-primary;
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $fontMain;
+        box-shadow: map-get($map:$shadow,$key:'sh1');
+
+
+        #nav-logo {
+            width: 75px;
+            height: 55px;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: initial;
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-right: 20px;
+
+            }
+
+
+        }
+
+        .navhover {
+            a {
+                text-decoration: none;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 1px;
+                transition: background-size .3s;
+
+                &:hover {
+                    @extend .navhover;
+                    background-size: 100% 1px;
+                }
+            }
+
+            
+        }
+    }
+}

@@ -1,0 +1,168 @@
+//Media queries
+
+$smartphone: 576px;
+$tablets: 768px;
+$desktop: 1200px;
+
+
+
+/* Media Querie */
+
+@media screen and (max-width: $tablets) {
+	.contenedor {
+		grid-template-areas:
+			"header header"
+			"main   main"
+			"footer footer";
+	}
+
+
+	header {
+		#navegador {
+			background: #acaaaa;
+			padding: 5px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row;
+
+
+			.nav-logo {}
+
+			#navbarNavDropdown {}
+		}
+
+
+	}
+
+	main {
+
+		.contenidopst {
+
+			.pst {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+
+				.align-self {
+
+					margin: 5rem;
+					align-self: center;
+
+
+					h1 {
+						font-size: $textXxl;
+						font-family: $fontSecondary;
+					}
+
+					h2 {
+						font-size: $textLg;
+						font-family: $fontSecondary;
+					}
+
+					p {
+						font-size: $textSm;
+						font-family: $fontMain;
+					}
+				}
+
+				#carouselExampleFade {
+					box-shadow: map-get($map:$shadow, $key:'sh2');
+					width: 100%;
+				}
+
+			}
+
+		}
+
+	}
+
+
+
+	.cntrar {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.sbrmi {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		div {
+			img {
+				margin: 0;
+				padding: 0;
+
+			}
+		}
+	}
+
+
+
+	.contc fieldset {
+		margin: 0;
+		padding: 0;
+	}
+
+	footer {
+		line-height: 3;
+		background-color: #0f0f0f;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+
+		p {
+			text-align: center;
+		}
+	}
+
+}
+
+@media screen and (max-width: $smartphone) {
+	.contenedor {
+		grid-template-areas:
+			"header header"
+			"main   main"
+			"footer footer";
+	}
+
+	.pst {
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+		flex-direction: column;
+
+		h1 {
+			align-items: center;
+		}
+
+		h2 {
+			align-items: center;
+		}
+
+		p {
+			align-items: center;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		#pflioimagenes {
+			width: 100%;
+		}
+	}
+
+}
