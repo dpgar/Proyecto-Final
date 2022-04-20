@@ -47,41 +47,39 @@ header nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  main .contenidopst .pst {
+  .contenidoPflio .coverPflio {
+    box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
+    background-color: rgba(207, 207, 207, 0.26); }
+    .contenidoPflio .coverPflio .tituloPflio {
+      font-size: 3em;
+      font-family: "Spartan", sans-serif;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
+      .contenidoPflio .coverPflio .tituloPflio:hover {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out; }
+  .contenidopst .pst {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    main .contenidopst .pst .align-self {
-      margin: 5rem;
+    flex-direction: column; }
+    .contenidopst .pst .align-self {
+      margin: 6rem;
       align-self: center; }
-      main .contenidopst .pst .align-self h1 {
+      .contenidopst .pst .align-self h1 {
         font-size: 5em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self h2 {
+      .contenidopst .pst .align-self h2 {
         font-size: 3em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self p {
+      .contenidopst .pst .align-self p {
         font-size: 1em;
         font-family: "Spartan", sans-serif; }
-    main .contenidopst .pst #carouselExampleFade {
+    .contenidopst .pst #carouselExampleFade {
       box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; }
-  .cntrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .sbrmi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .sbrmi div img {
-      margin: 0;
-      padding: 0; }
-  .contc fieldset {
-    margin: 0;
-    padding: 0; }
   footer {
     line-height: 3;
     background-color: #0f0f0f;
@@ -99,41 +97,46 @@ header nav {
 @media screen and (max-width: 576px) {
   .contenedor {
     grid-template-areas: "header header" "main   main" "footer footer"; }
-  .pst {
+  .contenidopst .pst {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .pst h1 {
-      align-items: center; }
-    .pst h2 {
-      align-items: center; }
-    .pst p {
-      align-items: center; }
-    .pst img {
-      width: 100%; }
-    .pst #pflioimagenes {
+    flex-direction: column;
+    justify-content: center; }
+    .contenidopst .pst .align-self {
+      width: 100%;
+      margin: 5rem;
+      align-self: center; }
+      .contenidopst .pst .align-self h1 {
+        font-size: 5em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self h2 {
+        font-size: 3em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self p {
+        font-size: 1em;
+        font-family: "Spartan", sans-serif; }
+    .contenidopst .pst #carouselExampleFade {
+      box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; } }
 
 /*contenido principal*/
-.contenidopst section {
+.contenidopst .pst {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .contenidopst section .align-self {
+  .contenidopst .pst .align-self {
     width: 100%;
     margin: 5rem;
     align-self: center; }
-    .contenidopst section .align-self h1 {
+    .contenidopst .pst .align-self h1 {
       font-size: 5em;
       font-family: "Playfair Display", serif; }
-    .contenidopst section .align-self h2 {
+    .contenidopst .pst .align-self h2 {
       font-size: 3em;
       font-family: "Playfair Display", serif; }
-    .contenidopst section .align-self p {
+    .contenidopst .pst .align-self p {
       font-size: 1em;
       font-family: "Spartan", sans-serif; }
-  .contenidopst section #carouselExampleFade {
+  .contenidopst .pst #carouselExampleFade {
     box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384); }
 
 /* Media Querie */
@@ -147,41 +150,39 @@ header nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  main .contenidopst .pst {
+  .contenidoPflio .coverPflio {
+    box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
+    background-color: rgba(207, 207, 207, 0.26); }
+    .contenidoPflio .coverPflio .tituloPflio {
+      font-size: 3em;
+      font-family: "Spartan", sans-serif;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
+      .contenidoPflio .coverPflio .tituloPflio:hover {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out; }
+  .contenidopst .pst {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    main .contenidopst .pst .align-self {
-      margin: 5rem;
+    flex-direction: column; }
+    .contenidopst .pst .align-self {
+      margin: 6rem;
       align-self: center; }
-      main .contenidopst .pst .align-self h1 {
+      .contenidopst .pst .align-self h1 {
         font-size: 5em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self h2 {
+      .contenidopst .pst .align-self h2 {
         font-size: 3em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self p {
+      .contenidopst .pst .align-self p {
         font-size: 1em;
         font-family: "Spartan", sans-serif; }
-    main .contenidopst .pst #carouselExampleFade {
+    .contenidopst .pst #carouselExampleFade {
       box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; }
-  .cntrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .sbrmi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .sbrmi div img {
-      margin: 0;
-      padding: 0; }
-  .contc fieldset {
-    margin: 0;
-    padding: 0; }
   footer {
     line-height: 3;
     background-color: #0f0f0f;
@@ -199,27 +200,32 @@ header nav {
 @media screen and (max-width: 576px) {
   .contenedor {
     grid-template-areas: "header header" "main   main" "footer footer"; }
-  .pst {
+  .contenidopst .pst {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .pst h1 {
-      align-items: center; }
-    .pst h2 {
-      align-items: center; }
-    .pst p {
-      align-items: center; }
-    .pst img {
-      width: 100%; }
-    .pst #pflioimagenes {
+    flex-direction: column;
+    justify-content: center; }
+    .contenidopst .pst .align-self {
+      width: 100%;
+      margin: 5rem;
+      align-self: center; }
+      .contenidopst .pst .align-self h1 {
+        font-size: 5em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self h2 {
+        font-size: 3em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self p {
+        font-size: 1em;
+        font-family: "Spartan", sans-serif; }
+    .contenidopst .pst #carouselExampleFade {
+      box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; } }
 
 /*porfolio*/
-.coverPflio {
+.contenidoPflio .coverPflio {
   box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
   background-color: rgba(207, 207, 207, 0.26); }
-  .coverPflio .tituloPflio {
+  .contenidoPflio .coverPflio .tituloPflio {
     font-size: 6em;
     font-family: "Spartan", sans-serif;
     color: white;
@@ -228,49 +234,49 @@ header nav {
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
-    .coverPflio .tituloPflio:hover {
+    .contenidoPflio .coverPflio .tituloPflio:hover {
       font-size: 6.5rem;
       transition: all 0.3s ease-in-out; }
 
-.pflio {
+.contenidoPflio .pflio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(207, 207, 207, 0.26); }
-  .pflio h2 {
+  .contenidoPflio .pflio h2 {
     font-size: 3em;
     font-family: "Playfair Display", serif;
     margin: 3rem;
     padding: 20px 0 20px 0; }
-  .pflio p {
+  .contenidoPflio .pflio p {
     font-size: 2em;
     font-family: "Spartan", sans-serif;
     margin: 1rem;
     align-self: center; }
-  .pflio #portadas {
+  .contenidoPflio .pflio #portadas {
     margin-right: 20px; }
-  .pflio #portadasImg {
+  .contenidoPflio .pflio #portadasImg {
     overflow: hidden;
     position: relative;
     margin-right: 40px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     padding: 1rem; }
-    .pflio #portadasImg:hover {
+    .contenidoPflio .pflio #portadasImg:hover {
       transform: scale(1.1);
       box-shadow: 13px 15px 37px black; }
-    .pflio #portadasImg .animaImagen, .pflio #portadasImg .animaImagen:hover {
+    .contenidoPflio .pflio #portadasImg .animaImagen, .contenidoPflio .pflio #portadasImg .animaImagen:hover {
       background-color: rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease-in-out;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       box-shadow: rgba(37, 37, 44, 0.212); }
-      .pflio #portadasImg .animaImagen:hover {
+      .contenidoPflio .pflio #portadasImg .animaImagen:hover {
         filter: opacity(0.9);
         transform: scale(1.04); }
-    .pflio #portadasImg .tituloPortada {
+    .contenidoPflio .pflio #portadasImg .tituloPortada {
       font-size: 3em;
       font-family: "Spartan", sans-serif;
       color: white;
@@ -279,7 +285,7 @@ header nav {
       left: 50%;
       transform: translate(-50%, -50%);
       text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
-    .pflio #portadasImg .descripcionPortada {
+    .contenidoPflio .pflio #portadasImg .descripcionPortada {
       font-size: 1.2em;
       font-family: "Spartan", sans-serif;
       color: white;
@@ -288,26 +294,26 @@ header nav {
       left: 50%;
       transform: translate(-50%, -50%);
       text-shadow: 0 0 8px rgba(0, 0, 0, 0.849); }
-  .pflio #bloqueSeparador {
+  .contenidoPflio .pflio #bloqueSeparador {
     line-height: 3;
     background-color: #0F0F0F;
     color: #FAF9F9;
     margin: 30px 0 0 0; }
-  .pflio .pflioFondo {
+  .contenidoPflio .pflio .pflioFondo {
     background-image: url(../img/fondoSbrmiV2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
     width: 100%; }
-    .pflio .pflioFondo p {
+    .contenidoPflio .pflio .pflioFondo p {
       padding: 40px 0 20px 0; }
-    .pflio .pflioFondo #instaPerfil {
+    .contenidoPflio .pflio .pflioFondo #instaPerfil {
       display: flex;
       justify-content: center;
       align-content: center;
       margin: 20px 0 60px; }
 
-.centrado {
+.contenidoPflio .centrado {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -392,41 +398,39 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  main .contenidopst .pst {
+  .contenidoPflio .coverPflio {
+    box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
+    background-color: rgba(207, 207, 207, 0.26); }
+    .contenidoPflio .coverPflio .tituloPflio {
+      font-size: 3em;
+      font-family: "Spartan", sans-serif;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
+      .contenidoPflio .coverPflio .tituloPflio:hover {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out; }
+  .contenidopst .pst {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    main .contenidopst .pst .align-self {
-      margin: 5rem;
+    flex-direction: column; }
+    .contenidopst .pst .align-self {
+      margin: 6rem;
       align-self: center; }
-      main .contenidopst .pst .align-self h1 {
+      .contenidopst .pst .align-self h1 {
         font-size: 5em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self h2 {
+      .contenidopst .pst .align-self h2 {
         font-size: 3em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self p {
+      .contenidopst .pst .align-self p {
         font-size: 1em;
         font-family: "Spartan", sans-serif; }
-    main .contenidopst .pst #carouselExampleFade {
+    .contenidopst .pst #carouselExampleFade {
       box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; }
-  .cntrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .sbrmi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .sbrmi div img {
-      margin: 0;
-      padding: 0; }
-  .contc fieldset {
-    margin: 0;
-    padding: 0; }
   footer {
     line-height: 3;
     background-color: #0f0f0f;
@@ -444,20 +448,25 @@ footer {
 @media screen and (max-width: 576px) {
   .contenedor {
     grid-template-areas: "header header" "main   main" "footer footer"; }
-  .pst {
+  .contenidopst .pst {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .pst h1 {
-      align-items: center; }
-    .pst h2 {
-      align-items: center; }
-    .pst p {
-      align-items: center; }
-    .pst img {
-      width: 100%; }
-    .pst #pflioimagenes {
+    flex-direction: column;
+    justify-content: center; }
+    .contenidopst .pst .align-self {
+      width: 100%;
+      margin: 5rem;
+      align-self: center; }
+      .contenidopst .pst .align-self h1 {
+        font-size: 5em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self h2 {
+        font-size: 3em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self p {
+        font-size: 1em;
+        font-family: "Spartan", sans-serif; }
+    .contenidopst .pst #carouselExampleFade {
+      box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; } }
 
 /*Grid*/
@@ -496,41 +505,39 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  main .contenidopst .pst {
+  .contenidoPflio .coverPflio {
+    box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
+    background-color: rgba(207, 207, 207, 0.26); }
+    .contenidoPflio .coverPflio .tituloPflio {
+      font-size: 3em;
+      font-family: "Spartan", sans-serif;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
+      .contenidoPflio .coverPflio .tituloPflio:hover {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out; }
+  .contenidopst .pst {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    main .contenidopst .pst .align-self {
-      margin: 5rem;
+    flex-direction: column; }
+    .contenidopst .pst .align-self {
+      margin: 6rem;
       align-self: center; }
-      main .contenidopst .pst .align-self h1 {
+      .contenidopst .pst .align-self h1 {
         font-size: 5em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self h2 {
+      .contenidopst .pst .align-self h2 {
         font-size: 3em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self p {
+      .contenidopst .pst .align-self p {
         font-size: 1em;
         font-family: "Spartan", sans-serif; }
-    main .contenidopst .pst #carouselExampleFade {
+    .contenidopst .pst #carouselExampleFade {
       box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; }
-  .cntrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .sbrmi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .sbrmi div img {
-      margin: 0;
-      padding: 0; }
-  .contc fieldset {
-    margin: 0;
-    padding: 0; }
   footer {
     line-height: 3;
     background-color: #0f0f0f;
@@ -548,20 +555,25 @@ footer {
 @media screen and (max-width: 576px) {
   .contenedor {
     grid-template-areas: "header header" "main   main" "footer footer"; }
-  .pst {
+  .contenidopst .pst {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .pst h1 {
-      align-items: center; }
-    .pst h2 {
-      align-items: center; }
-    .pst p {
-      align-items: center; }
-    .pst img {
-      width: 100%; }
-    .pst #pflioimagenes {
+    flex-direction: column;
+    justify-content: center; }
+    .contenidopst .pst .align-self {
+      width: 100%;
+      margin: 5rem;
+      align-self: center; }
+      .contenidopst .pst .align-self h1 {
+        font-size: 5em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self h2 {
+        font-size: 3em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self p {
+        font-size: 1em;
+        font-family: "Spartan", sans-serif; }
+    .contenidopst .pst #carouselExampleFade {
+      box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; } }
 
 /*contratar*/
@@ -680,41 +692,39 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  main .contenidopst .pst {
+  .contenidoPflio .coverPflio {
+    box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
+    background-color: rgba(207, 207, 207, 0.26); }
+    .contenidoPflio .coverPflio .tituloPflio {
+      font-size: 3em;
+      font-family: "Spartan", sans-serif;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
+      .contenidoPflio .coverPflio .tituloPflio:hover {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out; }
+  .contenidopst .pst {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    main .contenidopst .pst .align-self {
-      margin: 5rem;
+    flex-direction: column; }
+    .contenidopst .pst .align-self {
+      margin: 6rem;
       align-self: center; }
-      main .contenidopst .pst .align-self h1 {
+      .contenidopst .pst .align-self h1 {
         font-size: 5em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self h2 {
+      .contenidopst .pst .align-self h2 {
         font-size: 3em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self p {
+      .contenidopst .pst .align-self p {
         font-size: 1em;
         font-family: "Spartan", sans-serif; }
-    main .contenidopst .pst #carouselExampleFade {
+    .contenidopst .pst #carouselExampleFade {
       box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; }
-  .cntrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .sbrmi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .sbrmi div img {
-      margin: 0;
-      padding: 0; }
-  .contc fieldset {
-    margin: 0;
-    padding: 0; }
   footer {
     line-height: 3;
     background-color: #0f0f0f;
@@ -732,20 +742,25 @@ footer {
 @media screen and (max-width: 576px) {
   .contenedor {
     grid-template-areas: "header header" "main   main" "footer footer"; }
-  .pst {
+  .contenidopst .pst {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .pst h1 {
-      align-items: center; }
-    .pst h2 {
-      align-items: center; }
-    .pst p {
-      align-items: center; }
-    .pst img {
-      width: 100%; }
-    .pst #pflioimagenes {
+    flex-direction: column;
+    justify-content: center; }
+    .contenidopst .pst .align-self {
+      width: 100%;
+      margin: 5rem;
+      align-self: center; }
+      .contenidopst .pst .align-self h1 {
+        font-size: 5em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self h2 {
+        font-size: 3em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self p {
+        font-size: 1em;
+        font-family: "Spartan", sans-serif; }
+    .contenidopst .pst #carouselExampleFade {
+      box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; } }
 
 /* Sobre mi */
@@ -876,41 +891,39 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  main .contenidopst .pst {
+  .contenidoPflio .coverPflio {
+    box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
+    background-color: rgba(207, 207, 207, 0.26); }
+    .contenidoPflio .coverPflio .tituloPflio {
+      font-size: 3em;
+      font-family: "Spartan", sans-serif;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
+      .contenidoPflio .coverPflio .tituloPflio:hover {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out; }
+  .contenidopst .pst {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    main .contenidopst .pst .align-self {
-      margin: 5rem;
+    flex-direction: column; }
+    .contenidopst .pst .align-self {
+      margin: 6rem;
       align-self: center; }
-      main .contenidopst .pst .align-self h1 {
+      .contenidopst .pst .align-self h1 {
         font-size: 5em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self h2 {
+      .contenidopst .pst .align-self h2 {
         font-size: 3em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self p {
+      .contenidopst .pst .align-self p {
         font-size: 1em;
         font-family: "Spartan", sans-serif; }
-    main .contenidopst .pst #carouselExampleFade {
+    .contenidopst .pst #carouselExampleFade {
       box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; }
-  .cntrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .sbrmi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .sbrmi div img {
-      margin: 0;
-      padding: 0; }
-  .contc fieldset {
-    margin: 0;
-    padding: 0; }
   footer {
     line-height: 3;
     background-color: #0f0f0f;
@@ -928,20 +941,25 @@ footer {
 @media screen and (max-width: 576px) {
   .contenedor {
     grid-template-areas: "header header" "main   main" "footer footer"; }
-  .pst {
+  .contenidopst .pst {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .pst h1 {
-      align-items: center; }
-    .pst h2 {
-      align-items: center; }
-    .pst p {
-      align-items: center; }
-    .pst img {
-      width: 100%; }
-    .pst #pflioimagenes {
+    flex-direction: column;
+    justify-content: center; }
+    .contenidopst .pst .align-self {
+      width: 100%;
+      margin: 5rem;
+      align-self: center; }
+      .contenidopst .pst .align-self h1 {
+        font-size: 5em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self h2 {
+        font-size: 3em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self p {
+        font-size: 1em;
+        font-family: "Spartan", sans-serif; }
+    .contenidopst .pst #carouselExampleFade {
+      box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; } }
 
 /* Contacto */
@@ -1145,41 +1163,39 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  main .contenidopst .pst {
+  .contenidoPflio .coverPflio {
+    box-shadow: 0px 7px 19px -11px rgba(0, 0, 0, 0.62);
+    background-color: rgba(207, 207, 207, 0.26); }
+    .contenidoPflio .coverPflio .tituloPflio {
+      font-size: 3em;
+      font-family: "Spartan", sans-serif;
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 8px rgba(0, 0, 0, 0.863); }
+      .contenidoPflio .coverPflio .tituloPflio:hover {
+        font-size: 3.5rem;
+        transition: all 0.3s ease-in-out; }
+  .contenidopst .pst {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-    main .contenidopst .pst .align-self {
-      margin: 5rem;
+    flex-direction: column; }
+    .contenidopst .pst .align-self {
+      margin: 6rem;
       align-self: center; }
-      main .contenidopst .pst .align-self h1 {
+      .contenidopst .pst .align-self h1 {
         font-size: 5em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self h2 {
+      .contenidopst .pst .align-self h2 {
         font-size: 3em;
         font-family: "Playfair Display", serif; }
-      main .contenidopst .pst .align-self p {
+      .contenidopst .pst .align-self p {
         font-size: 1em;
         font-family: "Spartan", sans-serif; }
-    main .contenidopst .pst #carouselExampleFade {
+    .contenidopst .pst #carouselExampleFade {
       box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; }
-  .cntrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
-  .sbrmi {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .sbrmi div img {
-      margin: 0;
-      padding: 0; }
-  .contc fieldset {
-    margin: 0;
-    padding: 0; }
   footer {
     line-height: 3;
     background-color: #0f0f0f;
@@ -1197,18 +1213,23 @@ footer {
 @media screen and (max-width: 576px) {
   .contenedor {
     grid-template-areas: "header header" "main   main" "footer footer"; }
-  .pst {
+  .contenidopst .pst {
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-direction: column; }
-    .pst h1 {
-      align-items: center; }
-    .pst h2 {
-      align-items: center; }
-    .pst p {
-      align-items: center; }
-    .pst img {
-      width: 100%; }
-    .pst #pflioimagenes {
+    flex-direction: column;
+    justify-content: center; }
+    .contenidopst .pst .align-self {
+      width: 100%;
+      margin: 5rem;
+      align-self: center; }
+      .contenidopst .pst .align-self h1 {
+        font-size: 5em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self h2 {
+        font-size: 3em;
+        font-family: "Playfair Display", serif; }
+      .contenidopst .pst .align-self p {
+        font-size: 1em;
+        font-family: "Spartan", sans-serif; }
+    .contenidopst .pst #carouselExampleFade {
+      box-shadow: -26px 7px 40px -33px rgba(0, 0, 0, 0.384);
       width: 100%; } }

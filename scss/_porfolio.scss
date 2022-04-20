@@ -3,6 +3,8 @@
 
 /*porfolio*/
 
+.contenidoPflio{
+
 .coverPflio{
     box-shadow: map-get($map:$shadow, $key:'sh5');
     background-color: $color-nineth;
@@ -154,7 +156,7 @@
     color: $color-fifth;
 }
 
-
+}
 
 
 

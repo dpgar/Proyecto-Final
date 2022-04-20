@@ -35,43 +35,75 @@ $desktop: 1200px;
 
 	}
 
-	main {
+	// Porfolio
 
-		.contenidopst {
+	.contenidoPflio {
 
-			.pst {
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-
-
-				.align-self {
-
-					margin: 5rem;
-					align-self: center;
+		.coverPflio {
+			box-shadow: map-get($map:$shadow, $key:'sh5');
+			background-color: $color-nineth;
 
 
-					h1 {
-						font-size: $textXxl;
-						font-family: $fontSecondary;
-					}
+			img {}
 
-					h2 {
-						font-size: $textLg;
-						font-family: $fontSecondary;
-					}
 
-					p {
-						font-size: $textSm;
-						font-family: $fontMain;
-					}
+			.tituloPflio {
+				font-size: $textLg;
+				font-family: $fontMain;
+				color: white;
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
+
+				&:hover {
+					font-size: 3.5rem;
+					transition: all 0.3s ease-in-out;
+				}
+			}
+
+		}
+	}
+
+
+
+// Presentacion
+
+
+	.contenidopst {
+
+		.pst {
+			display: flex;
+			flex-direction: column;
+
+
+
+			.align-self {
+
+				margin: 6rem;
+				align-self: center;
+
+
+				h1 {
+					font-size: $textXxl;
+					font-family: $fontSecondary;
 				}
 
-				#carouselExampleFade {
-					box-shadow: map-get($map:$shadow, $key:'sh2');
-					width: 100%;
+				h2 {
+					font-size: $textLg;
+					font-family: $fontSecondary;
 				}
 
+				p {
+					font-size: $textSm;
+					font-family: $fontMain;
+				}
+			}
+
+			#carouselExampleFade {
+				box-shadow: map-get($map:$shadow, $key:'sh2');
+				width: 100%;
 			}
 
 		}
@@ -80,34 +112,10 @@ $desktop: 1200px;
 
 
 
-	.cntrar {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.sbrmi {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-		div {
-			img {
-				margin: 0;
-				padding: 0;
-
-			}
-		}
-	}
 
 
 
-	.contc fieldset {
-		margin: 0;
-		padding: 0;
-	}
+
 
 	footer {
 		line-height: 3;
@@ -138,31 +146,44 @@ $desktop: 1200px;
 			"footer footer";
 	}
 
-	.pst {
-		display: flex;
-		justify-content: space-between;
-		box-sizing: border-box;
-		flex-direction: column;
+	.contenidopst {
 
-		h1 {
-			align-items: center;
+		.pst {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.align-self {
+				width: 100%;
+				margin: 5rem;
+				align-self: center;
+
+
+				h1 {
+					font-size: $textXxl;
+					font-family: $fontSecondary;
+				}
+
+				h2 {
+					font-size: $textLg;
+					font-family: $fontSecondary;
+				}
+
+				p {
+					font-size: $textSm;
+					font-family: $fontMain;
+				}
+			}
+
+			#carouselExampleFade {
+				box-shadow: map-get($map:$shadow, $key:'sh2');
+				width: 100%;
+			}
+
 		}
 
-		h2 {
-			align-items: center;
-		}
 
-		p {
-			align-items: center;
-		}
 
-		img {
-			width: 100%;
-		}
-
-		#pflioimagenes {
-			width: 100%;
-		}
 	}
 
 }
