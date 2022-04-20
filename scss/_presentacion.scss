@@ -11,9 +11,12 @@
         justify-content: space-between;
 
         .align-self {
-            width: 100%;
+            // width: 100%;
             margin: 5rem;
-            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
 
 
             h1 {

@@ -16,15 +16,20 @@
     overflow: hidden;
 
     .contcFondo {
-         
+        background: #fff;
+        width: 800px;
+        max-width: 800px;
+        padding: 25px 50px 10px 40px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
         .textForm {
             font-size: $textLg;
             font-weight: 600;
             text-align: center;
-            padding-bottom: 4rem;
+            background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            padding: 2rem 0 5rem 0;
 
         }
 
@@ -97,7 +102,7 @@
                 justify-content: center;
                 margin: 32px 0;
                 padding: 10px;
-                
+
 
                 .submit-btn {
                     padding-bottom: 10px;
@@ -110,13 +115,14 @@
                         text-decoration: none;
 
                         input {
-                            
+
                             font-size: $textMg;
                             font-family: $fontThird;
                             background: #545454;
                             background-image: linear-gradient(to bottom, #545454, #292929);
                             border-radius: 30px;
-                            padding: 15px 40px 15px 40px; ;
+                            padding: 15px 40px 15px 40px;
+                            ;
                             text-shadow: 1px 2px 3px #363636;
                             box-shadow: 1px 1px 3px #8f8f8f;
                             font-family: $fontMain;

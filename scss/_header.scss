@@ -1,10 +1,11 @@
 @import "_variables.scss";
+@import "_mediaqueries.scss";
 
 /* Cabecera */
 
 header {
 
-    nav {
+    #navegador {
         background-color: $color-primary;
         padding: 5px 20px;
         display: flex;
@@ -43,7 +44,7 @@ header {
                 transition: background-size .3s;
 
                 &:hover {
-                    @extend .navhover;
+                    @extend a;
                     background-size: 100% 1px;
                 }
             }
