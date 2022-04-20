@@ -64,11 +64,90 @@ $desktop: 1200px;
 			}
 
 		}
+
+		.pflio {
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: $color-nineth;
+
+			h2 {
+				font-size: $textLg;
+				font-family: $fontSecondary;
+				margin: 3rem;
+				padding: 20px 0 20px 0;
+			}
+
+			p {
+				font-size: $textMg;
+				font-family: $fontMain;
+				margin: 1rem;
+				align-self: center;
+			}
+
+			#portadas {
+				margin-right: 20px;
+			}
+
+			#portadasImg {
+				overflow: hidden;
+				position: relative;
+				margin-right: 20px;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+				padding: 1.2rem;
+
+				&:hover {
+					transform: scale(1.1);
+					box-shadow: 13px 15px 37px black;
+				}
+
+				.animaImagen {
+					background-color: $color-sixth;
+					transition: transform 0.3s ease-in-out;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					box-shadow: $color-eigth;
+
+					&:hover {
+						@extend .animaImagen;
+						filter: opacity(0.9);
+						transform: scale(1.04);
+					}
+				}
+
+				.tituloPortada {
+					font-size: $textLg;
+					font-family: $fontMain;
+					color: white;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
+				}
+
+				.descripcionPortada {
+					font-size: $textSmV2;
+					font-family: $fontMain;
+					color: white;
+					position: absolute;
+					top: 55%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					text-shadow: 0 0 8px rgba(0, 0, 0, 0.849);
+					width: max-content;
+				}
+			}
+		}
 	}
 
 
 
-// Presentacion
+	// Presentacion
 
 
 	.contenidopst {

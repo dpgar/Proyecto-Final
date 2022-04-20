@@ -3,22 +3,18 @@
 
 /*porfolio*/
 
-.contenidoPflio{
+.contenidoPflio {
 
-.coverPflio{
-    box-shadow: map-get($map:$shadow, $key:'sh5');
-    background-color: $color-nineth;
-
-
-    img{
-        
-    
-            
-    }
-    
+    .coverPflio {
+        box-shadow: map-get($map:$shadow, $key:'sh5');
+        background-color: $color-nineth;
 
 
-    .tituloPflio{
+        img {}
+
+
+
+        .tituloPflio {
             font-size: $text2xl;
             font-family: $fontMain;
             color: white;
@@ -28,133 +24,133 @@
             transform: translate(-50%, -50%);
             text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
 
-            &:hover{
+            &:hover {
                 font-size: 6.5rem;
                 transition: all 0.3s ease-in-out;
             }
-    }
-
-}
-
-.pflio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-nineth;
-
-    h2 {
-        font-size: $textLg;
-        font-family: $fontSecondary;
-        margin: 3rem;
-        padding: 20px 0 20px 0;
-    }
-
-    p {
-        font-size: $textMg;
-        font-family: $fontMain;
-        margin: 1rem;
-        align-self: center;
-    }
-
-    #portadas {
-        margin-right: 20px;
-    }
-
-    #portadasImg {
-        overflow: hidden;
-        position: relative;
-        margin-right: 40px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        padding: 1rem;
-
-        &:hover {
-            transform: scale(1.1);
-            box-shadow: 13px 15px 37px black;
         }
 
-        .animaImagen {
-            background-color: $color-sixth;
-            transition: transform 0.3s ease-in-out;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            box-shadow: $color-eigth;
+    }
+
+    .pflio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-nineth;
+
+        h2 {
+            font-size: $textLg;
+            font-family: $fontSecondary;
+            margin: 3rem;
+            padding: 20px 0 20px 0;
+        }
+
+        p {
+            font-size: $textMg;
+            font-family: $fontMain;
+            margin: 1rem;
+            align-self: center;
+        }
+
+        #portadas {
+            margin-right: 20px;
+        }
+
+        #portadasImg {
+            overflow: hidden;
+            position: relative;
+            margin-right: 40px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            padding: 1rem;
 
             &:hover {
-                @extend .animaImagen;
-                filter: opacity(0.9);
-                transform: scale(1.04);
+                transform: scale(1.1);
+                box-shadow: 13px 15px 37px black;
             }
+
+            .animaImagen {
+                background-color: $color-sixth;
+                transition: transform 0.3s ease-in-out;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                box-shadow: $color-eigth;
+
+                &:hover {
+                    @extend .animaImagen;
+                    filter: opacity(0.9);
+                    transform: scale(1.04);
+                }
+            }
+
+            .tituloPortada {
+                font-size: $textLg;
+                font-family: $fontMain;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
+            }
+
+            .descripcionPortada {
+                font-size: $textSmV2;
+                font-family: $fontMain;
+                color: white;
+                position: absolute;
+                top: 55%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-shadow: 0 0 8px rgba(0, 0, 0, 0.849);
+            }
+
+
         }
 
-        .tituloPortada {
-            font-size: $textLg;
-            font-family: $fontMain;
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
+        #bloqueSeparador {
+            line-height: 3;
+            background-color: $color-secondary;
+            color: $color-third;
+            margin: 30px 0 0 0;
         }
 
-        .descripcionPortada {
-            font-size: $textSmV2;
-            font-family: $fontMain;
-            color: white;
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-shadow: 0 0 8px rgba(0, 0, 0, 0.849);
+        .pflioFondo {
+            background-image: url(../img/fondoSbrmiV2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+            width: 100%;
+
+            p {
+                padding: 40px 0 20px 0;
+            }
+
+            #instaPerfil {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin: 20px 0 60px;
+
+
+            }
+
+
         }
 
 
     }
 
-    #bloqueSeparador {
-        line-height: 3;
-        background-color: $color-secondary;
-        color: $color-third;
-        margin: 30px 0 0 0;
+    .centrado {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: $textMg;
+        font-family: $fontMain;
+        color: $color-fifth;
     }
-
-    .pflioFondo{
-        background-image: url(../img/fondoSbrmiV2.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        overflow: hidden; 
-        width: 100%;   
-
-        p{
-            padding: 40px 0 20px 0;
-        }
-    
-        #instaPerfil {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin: 20px 0 60px;
-        
-
-    }
-
-    
-}
-
-
-}
-
-.centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: $textMg;
-    font-family: $fontMain;
-    color: $color-fifth;
-}
 
 }
 
@@ -162,12 +158,12 @@
 
 /*personal,street,casual - galeria*/
 
-.breadcrumbGallery{
+.breadcrumbGallery {
     padding-top: 1rem;
     margin: 2rem;
     font-size: $textSmV3;
     font-family: $fontMain;
-    
+
 }
 
 
@@ -210,7 +206,7 @@
         }
     }
 
-    #bloqueGallery{
+    #bloqueGallery {
         background-color: $color-sixth;
     }
 }
