@@ -27,26 +27,3 @@
 
  
 
-/*Media querie*/
-
-@media screen and (min-width: $tablets) {
-    .contenedor {
-		grid-template-areas: 
-		"header header" 
-		"main   main"   
-		"footer footer";
-
-        .contenido{
-            display: flex;
-            justify-content: space-between;
-            box-sizing: border-box;
-            flex-direction: column;
-
-            img{
-                width: 100%;
-            }
-        }
-	}
-
-    
-}

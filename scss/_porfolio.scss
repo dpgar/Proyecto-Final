@@ -1,5 +1,5 @@
 @import "variables.scss";
-@import "_mediaqueries.scss";
+
 
 /*porfolio*/
 
@@ -12,7 +12,7 @@
 
         img {}
 
-
+    
 
         .tituloPflio {
             font-size: $textXxl;
@@ -79,7 +79,7 @@
                 box-shadow: $color-eigth;
 
                 &:hover {
-                    @extend .animaImagen;
+                    
                     filter: opacity(0.9);
                     transform: scale(1.04);
                 }

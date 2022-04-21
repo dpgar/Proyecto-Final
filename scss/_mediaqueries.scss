@@ -193,7 +193,7 @@ $desktop: 1200px;
 					box-shadow: $color-eigth;
 
 					&:hover {
-						@extend .animaImagen;
+
 						filter: opacity(0.9);
 						transform: scale(1.04);
 					}
@@ -680,7 +680,7 @@ $desktop: 1200px;
 	header {
 		overflow: hidden;
 		width: 100%;
-		
+
 		#navegador {
 			background-color: $color-primary;
 			padding: 5px 20px;
@@ -730,8 +730,10 @@ $desktop: 1200px;
 		}
 	}
 
-		// Presentacion
+	// Presentacion
 
+	main {
+		width: 100%;
 
 		.contenidopst {
 
@@ -739,42 +741,48 @@ $desktop: 1200px;
 			.pst {
 				display: flex;
 				flex-direction: column;
-				width: 100%;
-	
-	
-	
+				box-sizing: border-box;
+
+
+
 				.align-self {
-	
+
 					margin: 5rem 5rem 5rem 0;
 					align-self: center;
-	
-	
+
+
 					h1 {
 						font-size: $textXxl;
 						font-family: $fontSecondary;
 					}
-	
+
 					h2 {
 						font-size: $textLg;
 						font-family: $fontSecondary;
 					}
-	
+
 					p {
 						font-size: $textSm;
 						font-family: $fontMain;
 					}
+
+					#carouselExampleFade {
+						box-shadow: map-get($map:$shadow, $key:'sh2');
+						width: 100%;
+					}
+
+					
 				}
-	
-				#carouselExampleFade {
-					box-shadow: map-get($map:$shadow, $key:'sh2');
-					width: 100%;
-				}
-	
+
+				
+
 			}
-	
+
 		}
 
-		// Porfolio
+	}
+
+	// Porfolio
 
 	.contenidoPflio {
 		width: 100%;
@@ -788,17 +796,17 @@ $desktop: 1200px;
 
 
 			.tituloPflio {
-				font-size: $textMg;
+				font-size: $textSmV4;
 				font-family: $fontMain;
 				color: white;
 				position: absolute;
-				top: 30%;
+				top: 25%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
 
 				&:hover {
-					font-size: 2.5rem;
+					font-size: $textMg;
 					transition: all 0.3s ease-in-out;
 				}
 			}
@@ -856,7 +864,7 @@ $desktop: 1200px;
 					box-shadow: $color-eigth;
 
 					&:hover {
-						
+
 						filter: opacity(0.9);
 						transform: scale(1.04);
 					}
@@ -885,7 +893,68 @@ $desktop: 1200px;
 					width: max-content;
 				}
 			}
+
+			.pflioFondo {
+				background-image: url(../img/fondoSbrmiV2.jpg);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				overflow: hidden;
+				width: 100%;
+
+				p {
+					padding: 40px 0 20px 0;
+				}
+
+				#instaPerfil {
+					display: flex;
+					justify-content: center;
+					align-content: center;
+					margin: 20px 0 60px;
+
+
+				}
+
+
+			}
 		}
+	}
+
+	//Contratar
+
+	.contenidoCntrar {
+
+
+
+		#carouselSlideCntrar {
+			box-shadow: map-get($map:$shadow, $key:'sh5');
+
+			.carousel-item {
+
+				transition: 0.5 ease-in-out left;
+
+				img {}
+			}
+
+
+
+			.tituloContratar {
+				font-size: $textSmV4;
+				font-family: $fontMain;
+				color: white;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-shadow: 0 0 8px rgba(0, 0, 0, 0.863);
+
+				&:hover {
+					font-size: $textMg;
+					transition: all 0.3s ease-in-out;
+
+				}
+			}
+		}
+
 	}
 
 	//Sobre mi 
@@ -899,7 +968,7 @@ $desktop: 1200px;
 			display: flex;
 			flex-direction: column;
 			align-content: center;
-			padding: 5rem 0 0 10rem;
+			padding: 3rem;
 
 			.imgSbrmi {
 
@@ -918,8 +987,7 @@ $desktop: 1200px;
 
 				background-color: $color-seventh;
 				margin: 2rem;
-				// text-align: center;
-				padding: 0 0 0 10rem;
+				padding: 2rem;
 
 
 
@@ -994,7 +1062,7 @@ $desktop: 1200px;
 			background-image: url(../img/fondoSbrmiV2.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
-			
+
 
 
 			.cardPosition1 {
